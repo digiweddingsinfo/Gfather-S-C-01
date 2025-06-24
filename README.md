@@ -1,2 +1,2 @@
-# Gfather-S-C-01
-Gfather-S-C-01
+# Godmother-Scratch-Card-01
+Godmother Scratch Card
