@@ -102,10 +102,12 @@ $('#tryAgain').on('click', function () {
 });
 
 $('#downloadBtn').on('click', function () {
-  html2canvas(document.querySelector(".scratchpad")).then(canvas => {
+  html2canvas(document.querySelector(".scratchpad"), {
+    scale: 3  
+  }).then(canvas => {
     let link = document.createElement('a');
     link.download = 'scratch-image.png';
-    link.href = canvas.toDataURL();
+    link.href = canvas.toDataURL('image/png');
     link.click();
   });
 });
